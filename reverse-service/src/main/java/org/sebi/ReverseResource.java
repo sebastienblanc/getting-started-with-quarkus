@@ -16,4 +16,5 @@ public class ReverseResource {
        StringBuilder builder = new StringBuilder(word);
        return builder.reverse().toString();
     }
+
 }

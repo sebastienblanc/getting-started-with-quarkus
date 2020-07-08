@@ -3,6 +3,8 @@ package org.sebi;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.annotation.security.RolesAllowed;
+import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -15,9 +17,14 @@ import javax.ws.rs.core.Response.Status;
 
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
+import io.quarkus.qute.Template;
+import io.quarkus.qute.TemplateInstance;
+import io.quarkus.security.identity.SecurityIdentity;
+
 @Path("/tasks")
 public class TaskResource {
-    
+   
+   
     @RestClient
     ReverseService reverseService;
 
