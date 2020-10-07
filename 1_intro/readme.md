@@ -2,7 +2,7 @@
 
 ## With Maven 
 
-`mvn io.quarkus:quarkus-maven-plugin:1.5.2.Final:create` 
+`mvn io.quarkus:quarkus-maven-plugin:1.8.2.Final:create` 
 
 ## With VS Code
 
