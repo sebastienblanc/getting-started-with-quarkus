@@ -53,8 +53,8 @@ Let's start by adding the needed extensions :
 ### Add configuration
 
 ```
-quarkus.datasource.url=jdbc:h2:mem:default
-quarkus.datasource.driver=org.h2.Driver
+quarkus.datasource.db-kind=h2
+quarkus.datasource.jdbc.url=jdbc:h2:mem:default
 quarkus.hibernate-orm.database.generation=drop-and-create
 
 ```
